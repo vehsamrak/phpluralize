@@ -9,5 +9,12 @@
             "email": "smonkl@bk.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vehsamrak\\Phpluralize\\": "src/"
+        }
+    }
 }
