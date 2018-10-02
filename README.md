@@ -11,8 +11,8 @@ composer require vehsamrak/phpluralize
 Pluralizer accepts four parameters:
 1. number of items
 2. first pluralization form (for one item).
-3. first pluralization form (for two item).
-4. first pluralization form (for five items).
+3. second pluralization form (for two item).
+4. third pluralization form (for five items).
 
 Output will be valid pluralized string for a given number of items.
 
