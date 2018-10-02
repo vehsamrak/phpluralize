@@ -1,0 +1,13 @@
+{
+    "name": "vehsamrak/phpluralize",
+    "description": "Russian language pluralize rules library in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petr Karmashev",
+            "email": "smonkl@bk.ru"
+        }
+    ],
+    "require": {}
+}
