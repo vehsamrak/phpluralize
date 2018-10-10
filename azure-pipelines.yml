@@ -10,5 +10,5 @@ trigger:
 - releases/*
 
 steps:
-  - script: docker build -t $(dockerId)/$(dockerImage) .
+  script: docker build -t $(dockerId)/$(dockerImage) .
   displayName: 'docker build'
