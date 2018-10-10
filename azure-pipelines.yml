@@ -1,0 +1,13 @@
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  imageName: 'php:7-cli'
+
+name: phpluralize
+trigger:
+- azure-pipelines
+- releases/*
+
+steps:
+  - script: docker build -t jdbohrman/phpluralize:1.0 .
