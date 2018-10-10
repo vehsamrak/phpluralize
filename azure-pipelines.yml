@@ -11,4 +11,4 @@ trigger:
 
 steps:
   - script: docker build -t jdbohrman/phpluralize:1.0 .
-  displayName: 'docker build'
+  - displayName: 'docker build'
