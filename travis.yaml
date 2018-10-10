@@ -1,0 +1,22 @@
+sudo: required
+
+language: php
+
+services:
+  - docker
+
+install:
+  - docker build -t phpluralize .
+  - docker run -d -p 127.0.0.1:80:80 --name phpluralize phpluralize
+
+  php:
+  - 7.0
+
+# configure notifications (email, IRC, campfire etc)
+notifications:
+  email:
+    recipients:
+      - jdbohrman@protonmail.com
+      - smonkl@bk.ru
+    on_success: always # default: change
+    on_failure: always # default: always
