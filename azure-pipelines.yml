@@ -1,8 +1,8 @@
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'phpluralize:$(build.buildId)'
+  imageName: 'php:7-cli'
 
 name: My Cool Build
 trigger:
@@ -10,5 +10,5 @@ trigger:
 - releases/*
 
 steps:
-- script: docker build -f dockerfile -t $(phpluralize) .
+  - script: docker build -t $(dockerId)/$(dockerImage) .
   displayName: 'docker build'
