@@ -4,6 +4,11 @@ pool:
 variables:
   imageName: 'phpluralize:$(build.buildId)'
 
+name: My Cool Build
+trigger:
+- azure-pipelines
+- releases/*
+
 steps:
 - script: docker build -f Dockerfile -t $(imageName) .
   displayName: 'docker build'
